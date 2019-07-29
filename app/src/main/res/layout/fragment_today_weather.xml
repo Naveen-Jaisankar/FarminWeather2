@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center_horizontal"
+    tools:context=".TodayWeatherFragment">
+
+    <LinearLayout
+        android:id="@+id/weather_panel"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_city_name"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="@string/weather_in_chennai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_weather"
+                android:src="@mipmap/ic_launcher"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/txt_temperature"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="8dp"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:text="@string/_30_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_description"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@string/weather_in_chennai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txt_date_time"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@string/weather_in_chennai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TableLayout
+            android:background="@drawable/border"
+            android:layout_marginTop="10dp"
+            android:stretchColumns="*"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:background="@drawable/cell"
+                    android:text="@string/wind"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:layout_column="1"
+                    android:id="@+id/txt_wind"
+                    android:text="@string/speed_1_deg_1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+            </TableRow>
+
+            <TableRow>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:background="@drawable/cell"
+                    android:text="@string/pressure"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:layout_column="1"
+                    android:id="@+id/txt_pressure"
+                    android:text="@string/_1013_75_hpa"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+            </TableRow>
+
+            <TableRow>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:background="@drawable/cell"
+                    android:text="@string/humidity"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:layout_column="1"
+                    android:id="@+id/txt_humidity"
+                    android:text="@string/_100"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+            </TableRow>
+
+            <TableRow>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:background="@drawable/cell"
+                    android:text="@string/sunrise"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:layout_column="1"
+                    android:id="@+id/txt_sunrise"
+                    android:text="@string/_11_00"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+            </TableRow>
+
+            <TableRow>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:background="@drawable/cell"
+                    android:text="@string/sunset"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:layout_column="1"
+                    android:id="@+id/txt_sunset"
+                    android:text="@string/_10_10"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+            </TableRow>
+
+            <TableRow>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:background="@drawable/cell"
+                    android:text="@string/geo_coords"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:layout_column="1"
+                    android:id="@+id/txt_geo_cood"
+                    android:text="@string/_32_0_81_0"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+    
+    <ProgressBar
+        android:id="@+id/loading"
+        android:indeterminate="true"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

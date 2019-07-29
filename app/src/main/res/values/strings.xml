@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">FarminWeather2</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="weather_in_chennai">Weather in Chennai</string>
+    <string name="sunset">Sunset</string>
+    <string name="_11_00">11:00</string>
+    <string name="_10_10">10:10</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="_100">100%</string>
+    <string name="geo_coords">Geo Coords</string>
+    <string name="_32_0_81_0">[32.0,-81.0]</string>
+    <string name="todo">TODO</string>
+    <string name="pressure">Pressure</string>
+    <string name="speed_1_deg_1">Speed: 1 Deg:1</string>
+    <string name="_1013_75_hpa">1013.75 hpa</string>
+    <string name="wind">Wind</string>
+    <!--<string name="weather_in_chennai">Weather in Chennai</string>-->
+    <string name="humidity">Humidity</string>
+    <string name="_30_c">30 c</string>
+   <!-- <string name="weather_in_chennai">Weather in Chennai</string>-->
+</resources>
